@@ -42,6 +42,8 @@ class Produto {
     cancelar() {
         document.querySelector('#valor').value = '';
         document.querySelector('#produto').value = '';
+
+        document.querySelector('#salvar').textContent = "Salvar"
     }
 
     adicionarNoHtml(produtoDados) {
