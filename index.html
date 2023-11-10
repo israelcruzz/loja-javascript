@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loja</title>
+
+    <link rel="stylesheet" href="./scr/style/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,700;1,6..12,400;1,6..12,500&family=Red+Hat+Display:wght@500;700;900&display=swap"
+        rel="stylesheet">
+
+    <script defer src="./scr/scripts/main.js"></script>
+</head>
+
+<body>
+    <header>
+        <h1>Loja</h1>
+    </header>
+
+    <main>
+        <div class="title">
+            <h2> Produtos </h2>
+            <span> Lista de produtos da minha loja. </span>
+        </div>
+
+        <div class="card">
+            <div class="lineInput">
+                <label> Produto </label>
+                <input type="text" id="produto" placeholder="Digite o nome do produto">
+            </div>
+
+            <div class="lineInput">
+                <label> Valor </label>
+                <input type="text" id="valor" placeholder="Digite o valor do produto">
+            </div>
+
+            <button onclick="produto.salvar()" id="salvar">Salvar</button>
+            <button onclick="produto.cancelar()">Cancelar</button>
+        </div>
+
+        <div class="content">
+            <table border="1">
+                <thead>
+                    <th class="center"> ID </th>
+                    <th> Produto </th>
+                    <th> Valor </th>
+                    <th class="center"> Ações </th>
+                </thead>
+
+               <tbody class="corpo">
+
+               </tbody>
+            </table>
+        </div>
+    </main>
+
+</body>
+
+</html>
